@@ -10,9 +10,11 @@ export function Header() {
   const [isOpen, setIsOpen] = useState(false);
 
   const navLinks = [
-    { href: "#features", label: "Características" },
-    { href: "#how-it-works", label: "Cómo funciona" },
-    { href: "#pricing", label: "Precios" },
+    { href: "#problema", label: "Problema" },
+    { href: "#como-funciona", label: "Cómo funciona" },
+    { href: "#estado-riesgo", label: "Estado de riesgo" },
+    { href: "#ejemplo", label: "Ejemplo" },
+    { href: "#cuando-usar", label: "Cuándo usar" },
   ];
 
   return (
@@ -39,11 +41,8 @@ export function Header() {
         </nav>
 
         <div className="hidden md:flex items-center gap-4">
-          <Button variant="ghost" asChild>
-            <Link href="/login">Iniciar sesión</Link>
-          </Button>
           <Button asChild>
-            <Link href="/signup">Comenzar gratis</Link>
+            <Link href="#acceso">Agendar demo</Link>
           </Button>
         </div>
 
@@ -68,11 +67,8 @@ export function Header() {
                 </Link>
               ))}
               <div className="flex flex-col gap-2 mt-4 pt-4 border-t">
-                <Button variant="outline" asChild>
-                  <Link href="/login">Iniciar sesión</Link>
-                </Button>
                 <Button asChild>
-                  <Link href="/signup">Comenzar gratis</Link>
+                  <Link href="#acceso">Agendar demo</Link>
                 </Button>
               </div>
             </nav>

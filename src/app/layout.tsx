@@ -9,13 +9,13 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Retenlo | Guarda lo que los CSM saben, pero nunca registran",
-  description: "Retenlo captura y organiza automáticamente el conocimiento de tus Customer Success Managers. Centraliza conversaciones, notas y contexto de clientes en un solo lugar.",
-  keywords: ["CSM", "Customer Success", "CRM", "Knowledge Management", "Gmail Integration", "Customer Intelligence"],
+  title: "Retenlo | Analiza reuniones de CS y detecta riesgo en tus cuentas",
+  description: "Retenlo analiza tus reuniones y correos de Customer Success y te entrega un resumen con señales claras: riesgo, fricción, oportunidades y seguimiento recomendado.",
+  keywords: ["Customer Success", "churn detection", "análisis de reuniones", "señales de riesgo", "B2B SaaS", "retención de clientes"],
   authors: [{ name: "Retenlo" }],
   openGraph: {
-    title: "Retenlo | Guarda lo que los CSM saben, pero nunca registran",
-    description: "Captura y organiza automáticamente el conocimiento de tus Customer Success Managers. Centraliza conversaciones, notas y contexto de clientes.",
+    title: "Retenlo | Analiza reuniones de CS y detecta riesgo en tus cuentas",
+    description: "Analiza tus reuniones y correos de CS. Recibe un resumen con estado de la cuenta, señales detectadas y próximos pasos sugeridos.",
     url: "https://retenlo.com",
     siteName: "Retenlo",
     locale: "es_ES",
@@ -23,8 +23,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Retenlo | Guarda lo que los CSM saben, pero nunca registran",
-    description: "Captura y organiza automáticamente el conocimiento de tus Customer Success Managers.",
+    title: "Retenlo | Analiza reuniones de CS y detecta riesgo en tus cuentas",
+    description: "Analiza tus reuniones y correos de CS. Recibe un resumen con estado de la cuenta, señales detectadas y próximos pasos.",
   },
   robots: {
     index: true,
