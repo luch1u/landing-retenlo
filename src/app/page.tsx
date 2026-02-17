@@ -377,7 +377,7 @@ export default function Home() {
                 con equipos de CS.
               </p>
               <Button size="lg" variant="secondary" asChild>
-                <Link href="mailto:lucas@retenlo.com?subject=Demo%2015%20min%20-%20Retenlo">
+                <Link href="mailto:lb.becerra.1995@gmail.com?subject=Demo%2015%20min%20-%20Retenlo">
                   Agendar demo de 15 min
                   <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
