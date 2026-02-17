@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { TrackedCtaLink } from "@/components/tracked-cta-link";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
 import { useState } from "react";
@@ -42,7 +43,9 @@ export function Header() {
 
         <div className="hidden md:flex items-center gap-4">
           <Button asChild>
-            <Link href="#acceso">Agendar demo</Link>
+            <TrackedCtaLink href="#acceso" location="header" action="scroll_to_cta">
+              Agendar demo
+            </TrackedCtaLink>
           </Button>
         </div>
 
@@ -68,7 +71,9 @@ export function Header() {
               ))}
               <div className="flex flex-col gap-2 mt-4 pt-4 border-t">
                 <Button asChild>
-                  <Link href="#acceso">Agendar demo</Link>
+                  <TrackedCtaLink href="#acceso" location="header_mobile" action="scroll_to_cta">
+                    Agendar demo
+                  </TrackedCtaLink>
                 </Button>
               </div>
             </nav>

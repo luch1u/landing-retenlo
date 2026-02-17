@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import { TrackedCtaLink } from "@/components/tracked-cta-link";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Header } from "@/components/header";
@@ -43,10 +44,10 @@ export default function Home() {
                 <span className="font-medium text-foreground">En roadmap:</span> análisis de correos.
               </p>
               <Button size="lg" asChild>
-                <Link href="#acceso">
+                <TrackedCtaLink href="#acceso" location="hero" action="scroll_to_cta">
                   Agendar demo de 15 min
                   <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
+                </TrackedCtaLink>
               </Button>
             </div>
           </div>
@@ -377,10 +378,14 @@ export default function Home() {
                 con equipos de CS.
               </p>
               <Button size="lg" variant="secondary" asChild>
-                <Link href="mailto:lb.becerra.1995@gmail.com?subject=Demo%2015%20min%20-%20Retenlo">
+                <TrackedCtaLink
+                  href="mailto:lb.becerra.1995@gmail.com?subject=Demo%2015%20min%20-%20Retenlo"
+                  location="cta_section"
+                  action="open_mailto"
+                >
                   Agendar demo de 15 min
                   <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
+                </TrackedCtaLink>
               </Button>
             </div>
           </div>
