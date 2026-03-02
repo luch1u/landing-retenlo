@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Separator } from "@/components/ui/separator";
 
 export function Footer() {
@@ -8,10 +9,14 @@ export function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
           {/* Brand */}
           <div className="col-span-2 md:col-span-1">
-            <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
-                <span className="text-lg font-bold text-primary-foreground">R</span>
-              </div>
+            <Link href="/" className="flex items-center gap-2.5 mb-4">
+              <Image
+                src="/logo.png"
+                alt="Retenlo"
+                width={32}
+                height={32}
+                className="h-8 w-8 object-contain"
+              />
               <span className="text-xl font-bold">Retenlo</span>
             </Link>
             <p className="text-sm text-muted-foreground">

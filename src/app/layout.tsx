@@ -13,6 +13,10 @@ export const metadata: Metadata = {
   description: "Retenlo analiza tus reuniones y correos de Customer Success y te entrega un resumen con señales claras: riesgo, fricción, oportunidades y seguimiento recomendado.",
   keywords: ["Customer Success", "churn detection", "análisis de reuniones", "señales de riesgo", "B2B SaaS", "retención de clientes"],
   authors: [{ name: "Retenlo" }],
+  icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
+  },
   openGraph: {
     title: "Retenlo | Analiza reuniones de CS y detecta riesgo en tus cuentas",
     description: "Analiza tus reuniones y correos de CS. Recibe un resumen con estado de la cuenta, señales detectadas y próximos pasos sugeridos.",

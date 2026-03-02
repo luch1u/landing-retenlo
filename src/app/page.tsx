@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { TrackedCtaLink } from "@/components/tracked-cta-link";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card";
@@ -28,6 +29,14 @@ export default function Home() {
         <section className="hero-gradient relative overflow-hidden py-20 md:py-32">
           <div className="container mx-auto px-4 md:px-6">
             <div className="flex flex-col items-center text-center max-w-3xl mx-auto">
+              <Image
+                src="/logo.png"
+                alt="Retenlo"
+                width={80}
+                height={80}
+                className="h-16 w-16 md:h-20 md:w-20 object-contain mb-6"
+                priority
+              />
               <Badge variant="secondary" className="mb-6">
                 Early access
               </Badge>
